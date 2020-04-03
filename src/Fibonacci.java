@@ -16,7 +16,7 @@ class Fibonacci {
         if (cache.size() > n - 2) return Fibonacci.cache.get(n - 2);
 
         int nthFib = fibonacci(n - 1) + fibonacci(n - 2);
-        cache.add(n - 3, nthFib);
+        cache.add(n - 2, nthFib);
 
         return nthFib;
     }
