@@ -1,9 +1,13 @@
 class Main {
 
     public static void main(String[] args) {
-        int x = Fibonacci.fibonacci(45);
-        int y = Fibonacci.fibonacci(20);
-        System.out.println(x);
-        System.out.println(y);
+        long startTime = System.currentTimeMillis();
+        System.out.println(Fibonacci.fibonacciNoMO(45)); //without memoization
+        System.out.println("Time taken without memoization: " + (System.currentTimeMillis() - startTime) + " ms");
+
+        Fibonacci.fibonacci(45); // Run first time to store values in cache
+        startTime = System.currentTimeMillis();
+        Fibonacci.fibonacci(45); //Time with memoization
+        System.out.println("Time taken with memoization: " + (System.currentTimeMillis() - startTime) + " ms");
     }
 }

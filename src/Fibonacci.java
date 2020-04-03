@@ -20,4 +20,10 @@ class Fibonacci {
 
         return nthFib;
     }
+
+    public static int fibonacciNoMO(int n) {
+        if (n < 0) return -1;
+        if (n == 1 | n == 0) return n;
+        return fibonacciNoMO(n - 1) + fibonacciNoMO(n - 2);
+    }
 }
