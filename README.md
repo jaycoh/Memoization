@@ -34,7 +34,7 @@ If so, we return the stored value, and thus our work is done. Otherwise, we recu
 
 ### The Results
 
-Running the code in Main.java gives us a true comparison of the fibonacci sequence with memoization. The first time printed to the screen is the time a recursive fibonacci function takes to return the 45th value of the sequence. This function runs in **O(n^2)** time
+Running the code in Main.java gives us a true comparison of the fibonacci sequence with memoization. The first time printed to the screen is the time a recursive fibonacci function takes to return the 45th value of the sequence. This function runs in **O(n^2)** time.
 I then run the fibonacci sequence with memoization twice: once to put our n = 45 value into the cache, and once to check the runtime when we are reusing an input in a memoized function. The runtimes of both are printed to the screen.
 
 I found that a fibonacci sequence with no memoization takes 11413 milliseconds, and both calls to fibonacci with memoization run in 0ms.
